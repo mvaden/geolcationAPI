@@ -1,3 +1,4 @@
+getLocation = () => {
     let geo = navigator.geolocation;
     if (geo) {
         geo.getCurrentPosition(showLocation, error);
@@ -7,11 +8,12 @@
     }
 }
 
-function showLocation(p) {
+showLocation = (p) => {
     let s = document.getElementById('cords');
     s.innerHTML = "<br>Latitude: " + p.coords.latitude + "<br>Longitude: " + p.coords.longitude;
 }
 
-function error() {
+error = () => {
     console.error("Error in retriving location.")
 }
+
