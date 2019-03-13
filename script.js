@@ -1,6 +1,4 @@
-const geo = navigator.geolocation;
-
-function getLocation() {
+    let geo = navigator.geolocation;
     if (geo) {
         geo.getCurrentPosition(showLocation, error);
         console.log("Geolocation is supported by this browser.");
