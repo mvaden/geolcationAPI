@@ -14,6 +14,7 @@ showLocation = (p) => {
 }
 
 error = () => {
+    let s = document.getElementById('cords');
+    s.innerHTML = "<br> There was a problem retriving the locat"
     console.error("Error in retriving location.")
 }
-
